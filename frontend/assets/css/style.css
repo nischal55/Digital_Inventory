@@ -1,0 +1,567 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#login_heading {
+    font-family: "Julius Sans One";
+    color: rgb(91, 90, 90);
+
+}
+
+#login_btn {
+    color: white;
+    background-color: orange;
+}
+
+.container {
+    display: flex;
+}
+
+.menu {
+    background-color: black;
+    height: 100vh;
+    width: 24%;
+}
+
+.header {
+    padding: 10px;
+    height: 11vh;
+    width: 93.5%;
+    background-color: rgb(40, 83, 212);
+    text-align: center;
+    color: rgb(223, 215, 215);
+    font-family: 'Opens Sans', sans-serif;
+    font-size: 20px;
+}
+
+.top-portion {
+    margin-top: -25px;
+    background-color: rgb(218, 215, 215);
+    height: 18vh;
+    width: 76vw;
+    font-size: 24px;
+    display: flex;
+}
+
+#date {
+    color: grey;
+    font-family: 'Opens Sans', sans-serif;
+    font-size: 22px;
+    padding: 35px;
+    width: 90%;
+    margin-right: 13rem;
+}
+
+#userShow {
+    padding: 35px;
+    color: rgb(27, 27, 27);
+    width: 10%;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    cursor: pointer;
+   
+}
+
+#username {
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+.alert-success {
+    background-color: rgb(202, 229, 202);
+    font-family: 'Opens Sans', sans-serif;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    color: rgb(117, 117, 117);
+    font-weight: 12px;
+    border-radius: 10px;
+}
+
+.container-two {
+    display: flex;
+    margin: 10px;
+}
+
+.card {
+    width: 12.5%;
+    height: 20vh;
+    background-color: rgb(229, 226, 226);
+    ;
+    /* border: 1px solid black; */
+}
+
+.container-three {
+    margin: 10px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Opens Sans', sans-serif;
+    font-weight: 500;
+    color: grey;
+    font-size: 18px;
+}
+
+.summary-report {
+    width: 33.33%;
+    text-align: center;
+    margin: 10px;
+    border-bottom: 1px rgb(2, 91, 194) solid;
+
+}
+
+.heading-section {
+    font-family: 'Opens Sans', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    border-bottom: 1px rgb(2, 91, 194) solid;
+}
+
+.heading {
+    color: rgb(82, 82, 82);
+    width: 50%;
+    display: flex;
+}
+
+.btn-section {
+    width: 50%;
+
+}
+
+.btn-primary {
+    background-color: rgb(15, 95, 233);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Opens Sans', sans-serif;
+    cursor: pointer;
+    text-align: center;
+}
+
+#addUsers {
+    margin-top: 5px;
+}
+
+.main-body {
+    margin: 10%;
+    margin-top: 2%;
+    font-family: 'Opens Sans', sans-serif;
+      height: 19rem;
+   overflow-y: scroll;
+
+}
+
+th, td {
+    padding: 20px;
+}
+
+#user_table_head {
+    color: rgb(122, 122, 122);
+  
+
+}
+th{
+     /* padding: 50px;   */
+    font-size: 18px;
+    padding-top: 5px;
+    
+    border-bottom: 1px solid rgb(199, 199, 199);
+     /* width: 100%;  */
+
+}
+thead {
+    
+    font-size: 18px;
+    padding-top: 0px;
+    
+    border-bottom: 1px solid rgb(199, 199, 199);
+    /* width: 100%; */
+    
+}
+
+
+.category-main {
+    display: flex;
+    justify-content: space-around;
+    /* border: 3px solid red; */
+}
+
+.add_section {
+    margin-top: -9%;
+    padding-left: 15%;
+}
+
+#add_category {
+    padding: 10px;
+     width: 100%;
+
+}
+#category-table{
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    width: 95%;
+    text-align: center;
+    
+    
+    
+}
+
+.display_section {
+    margin-left: -4px;
+    height:25rem;
+    overflow-y: scroll;
+    
+}
+.category-heading-section{
+
+display: flex;
+margin-top: 2.7rem;
+margin-left: 1rem;
+border-bottom: 1px solid blue;
+    margin-bottom: .5rem;
+
+
+}
+
+
+.category-heading-section h2{
+    /* color: red; */
+width: 100%;
+font-family: sans-serif;
+
+/* margin-top: 3rem; */
+
+}
+.add_section, .display_category{
+    /* background:pink; */
+    width: 50%;
+}
+
+.header_section {
+    display: flex;
+    margin: 2rem;
+    width: 90%;
+    color: rgb(40, 126, 187);
+    font-family: 'Opens Sans', sans-serif;
+
+}
+
+.purchase-head {
+    margin-top: 10px;
+    padding-right: 20px;
+}
+
+.product-main {
+    font-family: 'Opens Sans', sans-serif;
+    margin-left: 70px;
+}
+
+#product_name {
+    height: 35px;
+    width: 80%;
+}
+
+#supplier_name {
+    height: 35px;
+    width: 34.5%;
+    margin-right: 3%;
+}
+
+#category {
+    height: 35px;
+    width: 34.5%;
+
+}
+
+#purchase_rate {
+    height: 32px;
+    width: 34.5%;
+    margin-right: 4%;
+
+}
+
+#sales_rate {
+    height: 32px;
+    width: 34.5%;
+}
+
+#purchase_item ,#sales_item{
+    height: 35px;
+    width: 33%;
+}
+#supplier_name{
+    height: 35px;
+    width: 35%;
+}
+
+#item_qty {
+    height: 30px;
+    width: 18.5%;
+    margin-left: 2%;
+
+}
+
+#rate_purchase,#rate_sales {
+    height: 35px;
+    width: 18.5%;
+}
+#discount_amt{
+    height: 35px;
+    width: 18.5%;
+}
+
+#invoice_no {
+    height: 32px;
+    width: 34%;
+}
+
+#invoice_date {
+    height: 32px;
+    width: 34%;
+}
+#product_image{
+    height: 32px;
+    width: 34%;
+}
+
+.userReg {
+    height: 40rem;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 35rem;
+    border: 1px solid black;
+    margin-top: -15.75rem;
+    display: none;
+    font-family: 'Opens Sans', sans-serif;
+    color: black;
+
+
+}
+#user_table_head{
+    color: rgb(45, 45, 45);
+}
+.useReg_header {
+    height: 4rem;
+    width: 100%;
+    background-color: rgb(38, 134, 243);
+    position: absolute;
+    color: white;
+    font-size: 24px;
+
+}
+
+.user_reg_input {
+    padding: 1rem;
+}
+
+#close_btn {
+    position: absolute;
+    left: 32rem;
+    cursor: pointer;
+    margin-top: 1rem;
+
+}
+
+#reg_head {
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+#user_name {
+    height: 2rem;
+    width: 95%;
+}
+
+#user_password {
+    height: 2rem;
+    width: 95%;
+}
+
+#email {
+    height: 2rem;
+    width: 95%;
+}
+
+#user_contact {
+    height: 2rem;
+    width: 95%;
+}
+
+#user_grp, #user_status {
+    height: 2.5rem;
+    width: 97%;
+}
+
+#user_table_body {
+    text-align: center;
+
+}
+
+/*  dropdown  */
+#dropdown{
+    cursor: pointer;
+}
+.dropdown_logout{
+   height: 5rem;
+   width: 7rem;
+   border: 1px solid black;
+   display: none;
+   position: absolute;
+   left: 78rem;
+   top:5rem;
+   background-color: rgb(213, 211, 211);
+   text-align: center;
+    border-radius: 10px;
+    color: rgb(108, 102, 102);
+   
+}
+.user_menu{
+    cursor: pointer;
+    font-family: 'Opens Sans',sans-serif;
+}
+.user_menu:hover{
+    color: rgb(36, 23, 23);
+}
+#supplier_name_reg{
+    width: 100%;
+    height: 2rem;
+}
+#supplier_contact{
+     width: 100%;
+    height: 2rem;
+}
+#supplier_address{
+    width: 100%;
+    height: 2rem;
+}
+.supplierReg{
+    height: 30rem;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 35rem;
+    border: 1px solid black;
+    margin-top: -10.75rem;
+    display: none;
+    font-family: 'Opens Sans', sans-serif;
+    color: black;
+    
+}
+.confirmation-box{
+    height: 12rem;
+    width: 30%;
+    position: absolute;
+    border: 1px solid black;
+    background-color: white;
+    position: absolute;
+    left: 35rem;
+    top: 15rem;
+    display: none;
+    
+}
+.confirm_head{
+    background-color: rgb(35, 123, 212);
+    color: white;
+    font-family: sans-serif;
+    height: 2rem;
+    padding: 10px;
+    
+  
+}
+.btn-part{
+    float:right;
+    margin-right: 10px;
+    display: flex;
+    
+}
+.btn-danger{
+    background-color: rgb(233, 15, 15);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Opens Sans', sans-serif;
+    cursor: pointer;
+}
+.confirm-description{
+    padding-left: 10px;
+    font-family: sans-serif;
+}
+#close_product_confirm{
+     position: absolute;
+    
+    left:24rem;
+    cursor: pointer;
+    
+
+}
+.purchase-container{
+    height: 85vh;
+    overflow-y: scroll;
+}
+.product_confirm{
+    width: 3rem; 
+    height:3rem;
+
+
+}
+
+.nav-menu{
+    color: rgb(234, 228, 228);
+    font-family: sans-serif;
+    
+}
+.nav-menu ul{
+    list-style: none;
+
+}
+.nav-menu ul li{
+    padding: 1.5rem;
+    padding-right: 25%;
+}
+.nav-menu ul li a{
+    color: rgb(195, 190, 190);
+    text-decoration: none;
+}
+.table-footer{
+    border-top: 1px solid rgb(194, 191, 191);
+    margin-top: 1rem;
+    width: 85%;
+    padding-right: 5%;
+    display: flex;
+    justify-content:flex-end;
+    color: rgb(143, 143, 143);
+    font-family: sans-serif;
+    
+}
+
+.searchBills{
+    height: 2rem;
+    margin-left: 10rem;
+}
+.supplier_name{
+    margin-left: 15px;
+    
+}
+.btn-success{
+    background-color: rgb(45, 172, 94);
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 6rem;
+    border-radius: 10px;
+    margin-left: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+.btn-group{
+    display: flex;
+}
