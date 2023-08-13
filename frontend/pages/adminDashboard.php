@@ -14,11 +14,14 @@ if (isset($_SESSION['username']) != 1) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="../assets/css/style.css?v=1">
+    <!-- <link rel="stylesheet" href="../assets/css/style.css?v=1"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="../assets/js/jquery-3.6.3.min.js"></script>
     <title>D_I | Dashboard</title>
 </head>
+<style>
+    <?php include("../assets/css/style.css") ?>
+</style>
 
 <body>
     <div class="container">
@@ -53,18 +56,33 @@ if (isset($_SESSION['username']) != 1) {
         <div class=" container-three">
             <div class="summary-report">
                 <p>Highest Selling products</p>
+                <hr><br>
+                <table border="1" style="border-collapse: collapse; margin-left:20px; width:18rem;">
+                    <tbody id="highestSales" class="table_data"></tbody>
+                </table>
+
             </div>
             <div class="summary-report">
-                <p>Latest Sales</p>
+                <p>Latest Purchase</p>
+                <hr><br>
+                <table border="1" style="border-collapse: collapse; margin-left:20px; width:18rem;">
+                    <tbody id="latestPurchase" class="table_data"></tbody>
+                </table>
             </div>
             <div class="summary-report">
                 <p>Recent Sales</p>
+                <hr><br>
+                <table border="1" style="border-collapse: collapse; margin-left:20px; width:18rem;">
+                    <tbody id="recentSales" class="table_data"></tbody>
+                </table>
             </div>
         </div>
 
     </div>
     </div>
-    <script src="../assets/js/index.js"></script>
+    <script>
+        <?php include "../assets/js/index.js" ?>
+    </script>
 
 </body>
 

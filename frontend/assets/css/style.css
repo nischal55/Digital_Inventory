@@ -108,7 +108,7 @@ body {
     width: 33.33%;
     text-align: center;
     margin: 10px;
-    border-bottom: 1px rgb(2, 91, 194) solid;
+    
 
 }
 
@@ -569,4 +569,8 @@ font-family: sans-serif;
     padding: 2rem 3rem;
     color: rgb(114, 113, 113);
     font-family: 'Open sans',sans-serif;
+}
+.table_data{
+    font-size: 15px;
+
 }

@@ -711,6 +711,55 @@ $(document).ready(function () {
       $('#total_category').append(dashDatas['total_category'])
     }
   )
-
-
+var highest_count = 1;
+  $.post(
+    "../../backend/functions/highestselling.php",
+      {},
+      function (data, status) {
+        var highest_sales = JSON.parse(data);
+        
+        for (highest_sale of highest_sales) {
+          var highest_tr = $(
+            "<tr><td>" + highest_count + "</td><td>" + highest_sale.product_name +"</td></tr>"
+          );
+          highest_count++;
+           $('#highestSales').append(highest_tr);
+        }
+       
+      }
+  )
+  var latestpurchase_count = 1;
+  $.post(
+    "../../backend/functions/latestPurchase.php",
+      {},
+      function (data, status) {
+        var latest_purchases = JSON.parse(data);
+        
+        for (latest_purchase of latest_purchases) {
+          var latestPurchase_tr = $(
+            "<tr><td>" + latestpurchase_count+ "</td><td>" + latest_purchase.product_name +"</td></tr>"
+          );
+          latestpurchase_count++;
+           $('#latestPurchase').append(latestPurchase_tr);
+        }
+       
+      }
+  )
+   var latestsales_count = 1;
+  $.post(
+    "../../backend/functions/latestSales.php",
+      {},
+      function (data, status) {
+        var latest_sales = JSON.parse(data);
+        
+        for (latest_sale of latest_sales) {
+          var latestSales_tr = $(
+            "<tr><td>" + latestsales_count+ "</td><td>" + latest_sale.product_name +"</td></tr>"
+          );
+          latestsales_count++;
+           $('#recentSales').append(latestSales_tr);
+        }
+       
+      }
+)
 })
