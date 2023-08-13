@@ -52,7 +52,7 @@ if (isset($_SESSION['username']) != 1) {
             <button class="btn-primary" style="width:15%;" id="sales_save">Save</button>
             <button class="btn-danger" style="width:15%;" id="sales_reset">Reset</button>
             <input type="text" id="searchBill_sales" class="searchBills" placeholder="Search Bills">
-            <button class="btn-primary" id="search_purchase_bill">Search</button><br><br><br>
+            <button class="btn-primary" id="search_sales_bill">Search</button><br><br><br>
             <table id="user_table_head" style="width:90%;">
                 <tr>
                     <th>#</th>

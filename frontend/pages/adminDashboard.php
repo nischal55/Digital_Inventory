@@ -28,21 +28,29 @@ if (isset($_SESSION['username']) != 1) {
             <div class="card">
                 <img src="../assets/images/profile_icon.png" alt="" height="137" width="125">
             </div>
-            <div class="card"></div>
+            <div class="card">
+                <h1 id="userid" class="dashItem"></h1>
+            </div>
             <div class="card">
                 <img src="../assets/images/purchase.png" alt="" height="137" width="126">
             </div>
-            <div class="card"></div>
             <div class="card">
+                <h1 id="total_purchase" class="dashItem"></h1>
+            </div>
+            <div class=" card">
                 <img src="../assets/images/category.png" alt="" height="137" width="126">
             </div>
-            <div class="card"></div>
             <div class="card">
+                <h1 id="total_category" class="dashItem"></h1>
+            </div>
+            <div class=" card">
                 <img src="../assets/images/sales.png" alt="" height="137" width="126">
             </div>
-            <div class="card"></div>
+            <div class="card">
+                <h1 id="total_sales" class="dashItem"></h1>
+            </div>
         </div>
-        <div class="container-three">
+        <div class=" container-three">
             <div class="summary-report">
                 <p>Highest Selling products</p>
             </div>

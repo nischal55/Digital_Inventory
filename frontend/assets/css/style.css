@@ -565,3 +565,8 @@ font-family: sans-serif;
 .btn-group{
     display: flex;
 }
+.dashItem{
+    padding: 2rem 3rem;
+    color: rgb(114, 113, 113);
+    font-family: 'Open sans',sans-serif;
+}

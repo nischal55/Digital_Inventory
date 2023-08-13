@@ -559,6 +559,8 @@ $(document).ready(function () {
       if (data < 1) {
         $('.sales_invoice_no').val('1');
       } else {
+        console.log(data)
+      
         $('.sales_invoice_no').val(data);
 
       }
@@ -603,9 +605,9 @@ $(document).ready(function () {
         function (data, status) {
           var sales_total = ((sales_qty * sales_rate) - sales_discount);
           var salesBillArray = {
-            sales_item: data,
+            sales_item: sales_item_id,
             sales_date: sales_date,
-            saels_rate: sales_rate,
+            sales_rate: sales_rate,
             sales_qty: sales_qty,
             sales_discount: sales_discount,
             sales_total: sales_total
@@ -632,7 +634,9 @@ $(document).ready(function () {
     window.location.href="sales.php"
   })
   $('#sales_save').click(function () {
-    if (confirm("Are you Sure to Save?") == true) {
+    
+ 
+     if (confirm("Are you Sure to Save?") == true) {
       $.post(
         "../../backend/functions/salesBillEntry.php",
         {
@@ -640,9 +644,73 @@ $(document).ready(function () {
         },
         function (data, status) {
           console.log(data)
+          if (data == "success") {
+            window.location.href = "../pages/sales.php";
+          }
         }
       )
       
     }
   })
+
+
+
+  $('#search_sales_bill').click(function () {
+    $('#sales_product_add').prop('disabled', true);
+    $('#sales_save').prop('disabled', true);
+
+    $.post(
+      "../../backend/functions/searchSalesBills.php",
+      {
+        sales_billsearch_id: $('#searchBill_sales').val()
+      },
+      function (data, status) {
+        $('#sales_bill_data').empty();
+        var sales_bill_datas = JSON.parse(data);
+        var sales_product_count = 1;
+        let sales_total = 0;
+        for (sales_bill_data of sales_bill_datas) {
+          $('.sales_total').empty();
+          var tr_sales_billshow = $(
+            '<tr><td>' +
+            sales_product_count +
+            '</td><td>' +
+            sales_bill_data.product_name +
+            '</td><td>' +
+            sales_bill_data.sales_qty +
+            '</td><td>' +
+            sales_bill_data.sales_rate +
+            '</td><td>' + sales_bill_data.discount_amt + '</td><td>' +
+            sales_bill_data.sales_total +
+            '</td></tr>'
+
+          )
+          sales_product_count++;
+          $('#sales_bill_data').append(tr_sales_billshow);
+          sales_total = sales_total + Number(sales_bill_data.sales_total);
+        }
+        $('.sales_total').append(sales_total);
+      }
+    )
+    $('#searchBill_sales').val('')
+  })
+
+
+
+  $.post(
+    "../../backend/functions/dashboardData.php",
+    {},
+    function (data, status) {
+      console.log(data)
+      var dashDatas = JSON.parse(data);
+      console.log(dashDatas)
+      
+      $('#userid').append(dashDatas['total_user'])
+      $('#total_purchase').append(dashDatas['total_purchase'])
+      $('#total_sales').append(dashDatas['total_sales'])
+      $('#total_category').append(dashDatas['total_category'])
+    }
+  )
+
+
 })
