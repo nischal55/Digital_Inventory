@@ -64,7 +64,7 @@ if (isset($_SESSION['username']) != 1) {
 
         <div class="main-body">
 
-            <table id="user_table_head">
+            <table id="user_table_head" style="width:100%;">
                 <tr>
                     <th>#</th>
                     <th>Username</th>
