@@ -25,8 +25,15 @@ if (isset($_SESSION['username']) != 1) {
 
 <body>
     <div class="container">
-        <?php include "../layouts/navbar.php"; ?>
-        <div class="alert-success">Welcome to Digital Inventory</div>
+        <?php
+        if ($_SESSION['usergroup'] == '1') {
+            include "../layouts/navbar.php";
+        } else if ($_SESSION['usergroup'] == '2') {
+            include "../layouts/supervisorNav.php";
+        } else {
+            include "../layouts/tellerNav.php";
+        } ?> <div class="alert-success">Welcome to Digital Inventory
+        </div>
         <div class="container-two">
             <div class="card">
                 <img src="../assets/images/profile_icon.png" alt="" height="137" width="125">

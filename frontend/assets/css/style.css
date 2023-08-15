@@ -574,3 +574,10 @@ font-family: sans-serif;
     font-size: 15px;
 
 }
+.report_main{
+    width: 40%;
+    height: 40vh;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top:5rem;
+}

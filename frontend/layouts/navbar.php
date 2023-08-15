@@ -14,7 +14,7 @@
             <li><a href="../pages/purchase.php"><i class="fa-solid fa-cart-shopping"></i> Purchase Management</a> </li>
             <li><a href="../pages/sales.php"><i class="fa-brands fa-sellsy"></i> Sales Management</a> </li>
             <li><a href="../pages/supplier.php"><i class="fa-solid fa-grid-2"></i> Supplier Management</a> </li>
-            <li><a href="../pages/supplier.php"><i class="fa-solid fa-grid-2"></i> Reports</a> </li>
+            <li><a href="../pages/report.php"><i class="fa-solid fa-grid-2"></i> Reports</a> </li>
 
         </ul>
     </div>
@@ -39,5 +39,3 @@
         <p class="user_menu" id="logout_menu">logout</p>
 
     </div>
-
-   

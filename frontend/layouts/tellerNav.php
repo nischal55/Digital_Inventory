@@ -11,6 +11,8 @@
             <li><a href="../pages/product.php"><i class="fa-solid fa-grid-2" style="color: #ffffff;"></i> Products</a> </li>
             <li><a href="../pages/purchase.php"><i class="fa-solid fa-cart-shopping"></i> Purchase Management</a> </li>
             <li><a href="../pages/sales.php"><i class="fa-brands fa-sellsy"></i> Sales Management</a> </li>
+            <li><a href="../pages/report.php"><i class="fa-solid fa-grid-2"></i> Reports</a> </li>
+
         </ul>
     </div>
 </div>
